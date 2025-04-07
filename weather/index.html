@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main class="main-container">
+
+        <header class="input-container">
+            <input type="text" placeholder="Search city" class="city-input">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+        
+        <section class="weather_info" style="display: none;">
+            <div class="local_date_container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="country_txt">Sri Lanka</h4>
+                </div>
+                <h5 class="current_date_txt">Wed, 07 Aug</h5>
+            </div>
+            <div class="weather_summery_container">
+                <img src="./assets/weather/clear.svg" alt="" class="weather_summery">
+                <div class="weather_summery_info">
+                    <h1 class="temp_txt">35 °C</h1>
+                    <h3 class="weather_txt">Clear</h3>
+                </div>
+            </div>
+            <div class="huwind_container">
+            <div class="humidity_container">
+                <div class="humidity_icon">
+                    <span class="material-symbols-outlined">
+                        humidity_mid
+                    </span>
+                </div>
+                <div class="humaidty_txt">
+                    <h3>Humidity</h3>
+                    <h2 class="humidity_value">55%</h2>
+                </div>
+            </div>
+            <div class="wind_container">
+                <div class="wind_icon">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                </div>
+                <div class="wind_txt">
+                    <h3>Wind Speed</h3>
+                    <h2 class="wind_value">2M/s</h2>
+                </div>
+            </div>
+        </div>
+        <div class="forcast_container">
+        <div class="forcast_box">
+            <h5 class="forcast_date">05 Aug</h5>
+            <img src="./assets/weather/thunderstorm.svg" alt="" class="forcast_img">
+            <h4 class="forcast">29°C</h4>
+        </div>
+        <div class="forcast_box">
+            <h5 class="forcast_date">05 Aug</h5>
+            <img src="./assets/weather/thunderstorm.svg" alt="" class="forcast_img">
+            <h4 class="forcast">29°C</h4>
+        </div>
+        <div class="forcast_box">
+            <h5 class="forcast_date">05 Aug</h5>
+            <img src="./assets/weather/thunderstorm.svg" alt="" class="forcast_img">
+            <h4 class="forcast">29°C</h4>
+        </div>
+        <div class="forcast_box">
+            <h5 class="forcast_date">05 Aug</h5>
+            <img src="./assets/weather/thunderstorm.svg" alt="" class="forcast_img">
+            <h4 class="forcast">29°C</h4>
+        </div>
+    </div>
+
+
+        </section>
+         
+
+        <section class="search_city_info">
+            <img src="./assets/message/search-city.png" alt="" class="search_img">
+            <h2 class="search_txt">Search City</h2>
+            <h4 class="search_para_txt">Find out the weather conditions of the city</h4>
+        </section>
+
+        <section class="notfound_info" style="display: none;">
+            <img src="./assets/message/not-found.png" alt="" class="notfound_img">
+            <h2 class="notfound_txt">Search City</h2>
+            <h4 class="notfound_para_txt">Find out the weather conditions of the city</h4>
+        </section>
+
+
+
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

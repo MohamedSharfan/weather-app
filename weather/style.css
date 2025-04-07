@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif ;
+    font-weight: 400;
+    color: white;
+}
+
+body{
+    background: url("./assets/beach-shore-blue-water-4k_1540142321.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    color: white;
+}
+.current_date_txt{
+    font-size: 23pt;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    background: rgb(0, 0, 0,0.15);
+    backdrop-filter: blur(15px);
+}
+.main-container{  
+    width: 600px;
+    margin: 90px 0;
+    height: 620px;  
+    z-index: 1;
+    background: linear-gradient(to top, rgb(0,0,0,0.15),rgb(255,255,255,0.15));
+    border-radius: 12px;
+    backdrop-filter: blur(100px); 
+    
+}
+.input-container{
+    margin: 30px;
+    position: relative;
+}
+.city-input{
+    padding: 15px 15px;
+    padding-right: 45px;
+    border-radius: 99px;
+    width: 100%;
+    border: 3px solid transparent;
+    background-color: rgb(0,0,0,0.25);
+    outline: none;
+    font-weight: 500;
+    transition: 0.25s border;
+}
+.city-input::placeholder{
+    color: rgb(255, 255, 255,0.7);
+    font-weight: 500;
+    font-size:16px;
+    padding-top:15px ;
+}
+.city-input:focus{
+    border: 3px solid rgb(0, 0, 0,0.15);
+}
+.search-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10px);
+    right: 10px;
+    background: none;
+    outline: none;
+    border: 0px solid ;
+    color: rgb(255, 255, 255,0.4);
+    display: flex;
+    cursor: pointer;
+}
+.weather_summery_container{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.weather_summery_info{
+    padding-right: 20px;
+}
+.weather_summery{
+    width: 120px;
+    height: 120px;
+}
+.weather_info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px 0;
+    justify-content: space-between;
+    
+}
+.local_date_container{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+.location{
+    display: flex;
+    padding-left: 30px;
+}
+.location span{
+    padding-top: 15px;
+}
+.country_txt{
+    margin-left: 5px;
+    font-size: 28pt;
+}
+.weather_summery_container{
+    margin-left: 20px;
+    
+}
+.weather_txt{
+    text-align: end;
+}
+.huwind_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    align-items: center;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.humidity_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+.wind_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+.forcast_box{
+    min-width: 100px;
+    border-radius: 1.5rem;
+    background: rgb(255, 255, 255,0.1);
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.forcast_img{
+    width: 40px;
+    height: 40px;
+}
+.forcast_container{
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+/*
+.forcast_container::-webkit-scrollbar {
+    height: 12px;
+}
+
+.forcast_container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 99px;
+}
+
+.forcast_container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 99px;
+}*/
+
+.search_city_info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    padding-left: 100px;
+    padding-bottom: 0px;
+}
+.search_img{
+    width: 400px;
+}
+.search_txt{
+    margin-left:27%;
+    font-weight: 700;
+    font-size: 25pt;
+    max-width: 300px;
+    align-items: center;
+}
+.search_para_txt{
+    margin-left: 30px;
+    max-width: 800px;
+    align-items: center;
+}
+.notfound_info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    padding-left: 100px;
+    padding-bottom: 0px;
+}
+.notfound_img{
+    padding-bottom: 30px;
+    width: 400px;
+}
+.notfound_txt{
+    margin-left:27%;
+    font-weight: 700;
+    font-size: 25pt;
+    max-width: 300px;
+    align-items: center;
+}
+.notfound_para_txt{
+    margin-left: 30px;
+    max-width: 800px;
+    align-items: center;
+}
