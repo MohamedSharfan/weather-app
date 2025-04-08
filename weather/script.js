@@ -15,7 +15,7 @@ const wind = document.querySelector('.wind_value');
 
 const forecast = document.querySelector('.forcast_container');
 
-const apiKey = 'b13f95cf62218cc3f981dfe91c2f23fe';
+const apiKey = '';
 
 searchbtn.addEventListener('click', () => {
     if(cityInput.value.trim() != ''){
